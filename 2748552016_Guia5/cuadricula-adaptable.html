@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="DC.creator" content="Ethan Marcotte - http://unstoppablerobotninja.com/" />
+    <meta name="DC.language" content="es" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuadrícula adaptable</title>
+    <link rel="stylesheet" href="estilo/responsive-grid.css" />
+</head>
+
+<body>
+    <div id="page">
+        <div class="inner">
+            <div class="mast">
+                <h1 id="logo">
+                    <a href="#"><img src="img/logo.png" alt="The Baker Street Inquirer"></a>
+                </h1>
+                <ul class="nav">
+                    <li class="first">
+                        <a href="#"><i>El</i> Weblogue</a>
+                    </li>
+                    <li>
+                        <a href="#"><i>Ediciones</i> Anteriores</a>
+                    </li>
+                    <li class="last">
+                        <a href="#"><i>Acerca de</i> Nuestro papel</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section intro">
+                <h2>Dame problemas, me dan <em>trabajo</em>.</h2>
+                <p>
+                    En el año 1878 obtuve mi grado de Doctor en Medicina
+                    en la Universidad de Londres, y viajé a Netley para
+                    tomar el curso prescrito para los cirujanos en el ejército.
+                    Después de haber completado mis estudios allí, yo estaba
+                    debidamente acreditado para ejercer como cirujano auxiliar
+                    en la <i>Fifth Northumberland Fusiliers</i>. El regimiento
+                    estaba ubicado en la India en aquel momento, y antes de
+                    que pudiera unirme a ella, estalló la segunda guerra
+                    afgana. Al desembarcar en Bombay, me enteré de que mi
+                    cuerpo había avanzado a través de las estaciones, y estaba
+                    inmerso en el territorio enemigo.
+                </p>
+            </div>
+            <div class="section main">
+                <h2>
+                    <b>Victors <abbr class="amp" title="And">&amp;</abbr> Villains</b>
+                </h2>
+                <ol>
+                    <li id="f-holmes" class="figure">
+                        <a href="#">
+                            <img src="img/f-holmes.jpg" alt="">
+                            <span class="figcaption">Sherlock Holmes</span>
+                        </a>
+                    </li>
+                    <!-- Final del li class="figure" -->
+                    <li id="f-watson" class="figure">
+                        <a href="#">
+                            <img src="img/f-watson.jpg" alt="" />
+                            <span class="figcaption"><abbr title="Professor">Dr.</abbr> John Hemish <b>Watson</b></span>
+                        </a>
+                    </li>
+                    <!-- Final del li class="figure" -->
+                    <li id="f-mycroft" class="figure">
+                        <a href="#">
+                            <img src="img/f-mycroft.jpg" alt="" />
+                            <span class="figcaption">Mycroft</span>
+                        </a>
+                    </li>
+                    <!-- Final del li class="figure" -->
+                    <li id="f-moriarty" class="figure">
+                        <a href="#">
+                            <img src="img/f-moriarty.jpg" alt="" />
+                            <span class="figcaption"><abbr title="Professor">Prof.</abbr> James <b>Moriarty</b></span>
+                        </a>
+                    </li>
+                    <!-- Final del li class="figure" -->
+                    <li id="f-adler" class="figure">
+                        <a href="#">
+                            <img src="img/f-adler.jpg" alt="" />
+                            <span class="figcaption">Irene <b>Adler</b></span>
+                        </a>
+                    </li>
+                    <!-- Final del li class="figure" -->
+                    <li id="f-winter" class="figure">
+                        <a href="#">
+                            <img src="img/f-winter.jpg" alt="" />
+                            <span class="figcaption">James <b>Winter</b></span>
+                        </a>
+                    </li>
+                    <!-- Final del li class="figure" -->
+                </ol>
+            </div>
+            <div class="footer">
+                <p>
+                    Ilustraciones de
+                    <a href="http://en.wikipedia.org/wiki/Sidney_Paget">Sidney Paget</a>,
+                    <a href="http://en.wikipedia.org/wiki/Arthur_Conan_Doyle">Sir Arthur Conan Doyle</a>.
+                </p>
+                <p>
+                    Lo que resta es gracias a
+                    <a href="http://unstoppablerobotninja.com/">Ethan Marcotte</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="site/imgSizer.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            imgSizer.collate();
+        }
+    </script>
+
+
+
+
+
+    <script type="text/javascript" src="site/ddpng.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('body, #page, h1, h1 img, ul.nav, ul.nav a, .main h2, .main h2 b, .footer');
+    </script>
+
+
+</body>
+
+</html>

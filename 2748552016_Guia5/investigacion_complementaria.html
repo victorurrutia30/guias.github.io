@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/investigacion.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Investigación Complementaria</h1>
+    </header>
+
+    <div class="toc">
+        <h2>Tabla de Contenidos</h2>
+        <ul>
+            <li><a href="#diseno-web">Diseño Web Adaptativo</a></li>
+            <li><a href="#meta-viewport">Meta Viewport: Parámetros Clave</a></li>
+            <li><a href="#compatibilidad">Compatibilidad en Navegadores Antiguos</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <section id="diseno-web">
+            <h2>Diseño Web Adaptativo</h2>
+            <p>
+                El elemento <code>&lt;meta&gt;</code> con la propiedad <code>viewport</code> es clave para controlar
+                cómo se visualizan las páginas web en dispositivos móviles. Algunos parámetros importantes incluyen:
+            </p>
+            <ul>
+                <li><strong>width:</strong> Ajusta el ancho del área visible, pudiendo ser un valor específico o el
+                    ancho del dispositivo (device-width).</li>
+                <li><strong>height:</strong> Define la altura del área visible, usando valores específicos o
+                    device-height. </li>
+                <li><strong>initial-scale:</strong> Establece el nivel de zoom inicial (1.0 es tamaño normal).</li>
+                <li><strong>minimum-scale:</strong> Define el nivel mínimo de zoom permitido.</li>
+                <li><strong>>maximum-scale:</strong> Controla el nivel máximo de zoom.</li>
+                <li><strong>user-scalable:</strong> Permite o bloquea que el usuario pueda hacer zoom.</li>
+                <li><strong>shrink-to-fit:</strong> Ajusta el contenido al ancho del viewport, útil en dispositivos
+                    antiguos.</li>
+            </ul>
+        </section>
+
+        <section id="meta-viewport">
+            <h2>Meta Viewport: Parámetros Clave</h2>
+            <p>
+                Para asegurar que tu página web se ajuste al ancho del dispositivo y ofrezca una experiencia adaptativa,
+                es importante utilizar la propiedad <code>viewport</code> en el elemento <code>&lt;meta&gt;</code>. Esto
+                es especialmente relevante en dispositivos móviles, donde es común que los navegadores redimensionen las
+                páginas web para que sean más accesibles sin la necesidad de hacer zoom o desplazarse horizontalmente.
+            </p>
+            <h3>Pasos importantes:</h3>
+            <ul>
+                <li><strong>Configura el meta viewport:</strong> El elemento <code>&lt;meta&gt;</code> se coloca en la
+                    sección <code>&lt;head&gt;</code> del archivo HTML y debe incluir la propiedad
+                    <code>width=device-width</code>. Esto asegura que el ancho del área visible de la página coincida
+                    con el ancho de la pantalla del dispositivo, ya sea móvil, tablet o de escritorio.
+                </li>
+                <li><strong>Establece el nivel de zoom inicial:</strong> Además del atributo
+                    <code>width=device-width</code>, es común utilizar el valor <code>initial-scale=1.0</code>, que
+                    garantiza que la página se cargue sin ningún tipo de zoom inicial, mostrándola en su tamaño natural.
+                </li>
+            </ul>
+
+            <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+
+            <h3>Ajustando ancho de página</h3>
+            <p>Para ajustar el ancho de la página al del dispositivo, establecer un zoom inicial de 1.0 y controlar si
+                los usuarios pueden hacer zoom, usa el elemento <code>&lt;meta&gt;</code> con la propiedad viewport.</p>
+
+            <p><strong>Ejemplo: </strong></p>
+
+            <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"&gt;</code></pre>
+
+            <ul>
+                <li><strong>width=device-width:</strong> Ajusta el ancho de la página al ancho del dispositivo.</li>
+                <li><strong>initial-scale=1.0:</strong> Establece un zoom inicial de 1.0 (tamaño real).</li>
+                <li><strong>minimum-scale=1.0:</strong> Impide reducir el tamaño de la página.</li>
+                <li><strong>user-scalable=no:</strong> Desactiva la capacidad de zoom.</li>
+            </ul>
+
+        </section>
+
+        <section id="compatibilidad">
+            <h2>Compatibilidad en Navegadores Antiguos</h2>
+
+            <p>Un archivo .htc es un componente HTML utilizado en versiones antiguas de Internet Explorer (IE8 y
+                anteriores) para permitir funcionalidades de CSS que no eran compatibles de forma nativa, como
+                border-radius. Los desarrolladores utilizaban archivos .htc para aplicar bordes redondeados en estos
+                navegadores, ya que no soportaban la propiedad border-radius de CSS. </p>
+
+            <p><strong>Ejemplo de código:</strong></p>
+
+            <pre><code>
+                .rounded-box {
+                    border: 1px solid #000;
+                    border-radius: 10px; /* Para navegadores modernos */
+                    behavior: url('/assets/css/border-radius.htc'); /* Para IE8 y anteriores */
+                }
+                </code></pre>
+
+            <p>Nota: El uso de archivos .htc es obsoleto y no recomendado para navegadores modernos, ya que IE8 y
+                versiones anteriores son prácticamente inexistentes en la actualidad.
+            </p>
+
+        </section>
+    </div>
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
