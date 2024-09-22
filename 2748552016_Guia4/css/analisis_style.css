@@ -1,0 +1,55 @@
+
+
+h1 {
+    color: green; 
+    font-size: 24px;
+}
+
+h2 {
+    color: blue; 
+    font-size: 20px;
+}
+
+strong {
+    color: red; 
+}
+
+span{
+    color: gold;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: red;
+    text-decoration: underline;
+}
+
+.purple-text {
+    color: purple;
+}
+
+.green-underline {
+    color: green;
+    text-decoration: underline;
+}
+
+
+
+
+
+p:nth-of-type(3) {
+    color: olive; 
+}
+
+p:nth-of-type(4) {
+    color: olive; 
+}
+
+p:nth-of-type(5) {
+    color: olive; 
+}
+
+
